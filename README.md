@@ -1,6 +1,6 @@
-# bubble-reactor
-puzzle game made with three.js
+# Bubble-Reactor
+Puzzle game made with three.js
 
 
-Project is still in very early stage
+Project is still in very early stage.
 For more information contact me on discord (Trizer#7250)
