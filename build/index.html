@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!----------------------------------------------------------->
+<!--HEAD-->
+<!----------------------------------------------------------->
+<title>Bubble Reactor</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!--css-->
+<link rel=stylesheet href="js/libraries/bootstrap.css"/>
+<link rel=stylesheet href="style.css"/>
+<!--three.js + libraries-->
+<script src="js/libraries/jquery-3.3.1.min.js"></script>
+<script src="js/libraries/bootstrap.min.js"></script>  
+<script src="js/libraries/three.106.js"></script>
+<script src="js/libraries/inflate.min.js"></script>
+<script src="js/libraries/FBXLoader.js"></script>
+<script src="js/libraries/stats.min.js"></script>
+<script src='js/libraries/threex.rendererstats.js'></script>
+<script src='js/libraries/keydrown.min.js'></script>
+<script src='js/libraries/Tween.js'></script>
+<script src='js/libraries/howler.core.js'></script>
+<!--Game scripts-->
+<script src='js/scene.js'></script>
+<script src='js/light.js'></script>
+<script src="js/skybox.js"></script>
+<script src='js/materials.js'></script>
+<script src='js/sound.js'></script>
+<script src='js/game.js'></script>
+<script src="js/logic.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/menus.js"></script>
+<!--three.js utility variables-->
+<script>
+var spriteLoader = new THREE.TextureLoader();
+var textureLoader = new THREE.TextureLoader();
+var clock = new THREE.Clock();
+var startTime = Date.now();
+</script>
+</head>
+<!----------------------------------------------------------->
+<!--BODY-->
+<!----------------------------------------------------------->
+<body class="text-center">
+<!--ThreeJS div-->
+<div id="ThreeJS" class="ThreeJS"></div>
+<!--Interface div-->
+<div id="Interface" class="cover-container fixed-top d-flex h-100 p-3 mx-auto flex-column parent">
+ 	
+<header class="masthead mb-auto">
+<div class="inner">
+<nav class="nav nav-masthead justify-content-center">
+<div id="title" class="title"><img src="img/logo.svg"></div>
+<div id="bbb"></div>
+</nav>
+</header>
+
+<main role="main" class="row inner cover justify-content-center">
+<div id="menus" class="menus"></div>
+</main>
+
+<footer class="mastfoot mt-auto">
+<div class="info">
+SHOOT BUBBLE: SPACEBAR --- ROTATE PUZZLE: KEYBOARD ARROWS --- RESET GAME: ESCAPE
+</div>
+</footer>
+	
+</div> 
+<!----------------------------------------------------------->
+<body>
+<script>
+//------------------------------------------------------------	
+//STATISTICS
+//------------------------------------------------------------	
+var stats = new Stats();
+stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
+// FPS counter
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.right = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild( stats.domElement );
+// Mesh counter
+var rendererStats = new THREEx.RendererStats();
+rendererStats.domElement.style.position = 'absolute'
+rendererStats.domElement.style.right = '0px'
+rendererStats.domElement.style.top   = '50px'
+document.body.appendChild( rendererStats.domElement )
+//------------------------------------------------------------	
+//INITIALISE GAME
+//------------------------------------------------------------
+//Howler.mute(true);
+gameStart();
+updateInterface(0);
+render();
+</script>
+</body>
+</html>

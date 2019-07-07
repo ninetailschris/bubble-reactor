@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+body {
+height: 100%;
+overflow: hidden;
+background-color: transparent;
+}
+html{
+background:linear-gradient(to bottom,#70aae5 0%,#fff 100%);
+}
+body{
+font-family: 'Fredoka One', cursive;	
+margin:0px;
+padding:0px;
+display: -ms-flexbox;
+display: -webkit-box;
+display: flex;
+-ms-flex-pack: center;
+-webkit-box-pack: center;
+justify-content: center;
+color: #fff;
+text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+a, a:active, a:visited, a:focus {
+text-decoration:none;
+color: #808080;
+}
+a:hover{
+text-decoration:none;
+color: #fff;
+}
+.info{
+color: #000;
+}
+.title{
+    height: auto;
+    width: 40%;
+}
+.nav-tabs li, .nav-tabs li a {
+ text-decoration: none;
+}
+.entry {
+color: #808080;
+pointer-events: auto;
+}
+.button{
+pointer-events:auto;  
+color: #fff;
+font-family:inherit;
+text-align: center;
+padding: 5px 0 5px 5px;
+text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
+width: 100%;
+	
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.button:hover{
+color: #ccc;
+}
+
+
+canvas {
+display:block;
+width:100vw;
+height:100vh;
+}
+.ThreeJS{
+width:100vw;
+height:100vh;
+}
+.cover-container {
+max-width: 100%;
+}
+.cover-container {
+pointer-events:none;        
+}
+.menus {
+    width: 300px;
+    font-size: 30px;
+    background-color: #404040e3;
+    border-radius: 10px;
+    border: 4px solid #ffffff;
+    box-shadow: inset 0 0 0 2px #000000;
+}
+.blink{
+animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+50% {opacity: 0;}
+}
