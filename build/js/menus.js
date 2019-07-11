@@ -11,7 +11,7 @@ linkList:
 linkList:
 [
 ['Demo mode','timeMode();game();'],
-['Back','updateInterface(0);'],
+['Test','updateInterface(0);'],
 ]
 },
 {//2 how to play
