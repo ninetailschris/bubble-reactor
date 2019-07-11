@@ -3,14 +3,14 @@ var menuList =[
 linkList:
 [
 ['1 Player','updateInterface(1);'],
-//['How to play','updateInterface(2);'],
+['How to play','updateInterface(2);'],
 //['Credits','updateInterface(3);'],
 ]
 },
 {//1 single player
 linkList:
 [
-['Demo mode','timeMode();game();'],
+['Demo Mode','timeMode();game();'],
 ['Test','updateInterface(0);'],
 ]
 },
