@@ -2,7 +2,7 @@ var menuList =[
 {//0 Title
 linkList:
 [
-['1 player','updateInterface(1);'],
+['1 Player','updateInterface(1);'],
 //['How to play','updateInterface(2);'],
 //['Credits','updateInterface(3);'],
 ]
