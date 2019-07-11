@@ -188,6 +188,8 @@ control.enabled = true;
 }
 //init Time mode-------------------------------------------------
 function timeMode(){
+console.log("Timer");
+//timer = setInterval(myTimer, 1000);
 mode='time';	
 var mat;
 for(var i = 0; i < totalRing; i++){
